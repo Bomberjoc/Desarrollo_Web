@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <p><h2>Datos de candidato al empleo</h2></p>
+<nav>
+    <ul>
+        <li><a href="../index.html">Regresar</a></li>
+    </ul>
+</nav>
+<form>
+    <fieldset>
+        <label>Buscar:</label>
+        <input type="search" size="10" placeholder="Escriba algo...">
+        <br><br>
+        <label>Nombres:</label>
+        <input type="text" autofocus >
+        <label>Apellidos:</label>
+        <input type="text">
+        <br><br>
+        <label>Número telefonico:</label>
+        <input type="tel" size="10" placeholder="555-424258">
+        <br><br>
+        <label>Link de su página:</label>
+        <input type="url" placeholder="https://manz.dev/">
+        <br><br>
+        <label>Correo electronico:</label>
+        <input type="email" placeholder="me@manz.dev">
+        <br><br>
+        <label>Contraseña</label>
+        <input type="password" size="10">
+        <br><br>
+        <label>Fecha de Nacimiento:</label>
+        <input type="date">
+        <br><br>
+        <label>Suba su Cédula</label>
+        <input type="file" accept="application/pdf">
+        <br><br>
+        <label>¿Posee discapacidades Fisicas?:</label>
+        Sí<input type="checkbox"> No<input type="checkbox">
+        <br><br>
+        <label>Describete a ti mismo:</label>
+        <br>
+        <textarea cols="50" rows="5" 
+        placeholder="Me considero una persona..."></textarea>
+        <br><br>
+        <label>¿Cuantos hijos tienes?:</label>
+        <input type="number" min="0" max="10">
+        <br><br>
+        Seleccione su género:
+        <select>
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+          <option value="3" selected>No sabe</option>
+        </select>
+        <br><br>
+        <label>¿Cuanta es su emoción de participar en nuestra empresa?</label>
+        <meter min="0" max="100"  value="50" low="25" high="75" optimum="100"></meter>
+        <br><br>
+        <label>Elija un color:</label>
+        <input type="color" value="#C98546">
+        <br><br>
+        <label>Hora del formulario</label>
+        <input type="time">
+        <br><br>
+        <progress value="0.8" max="1">80%</progress>
+        <br><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</body>
+</html>
