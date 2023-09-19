@@ -45,11 +45,11 @@
             margin-right: 100px;
             margin-left: 100px;
             padding: 20px;
-            box-shadow: 0px 20px 100px;
+            box-shadow: 0px 20px 100px ;
         }
         /* Selector adyacente */
         #papa > .hermanos + .hermanos{
-            color: #0000ff;
+            color: #05b216;
         }
         /* Selector descendente */
         #papa a {
@@ -58,4 +58,59 @@
         /* Selector Hijo */
         #papa > #etiqueta > a{
             color:pink;
+        }
+        /* TITULO PARA BOX MODEL */
+        #tittle_box{
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: pink;
+            text-align: center;
+            /*margin-top: 20px;*/
+            /*margin-bottom: 20px;*/
+            margin: 20px;
+            border: 1px ridge #000;
+            border-radius: 10px;
+            padding-bottom: 30px;
+            -webkit-box-shadow: -30px 11px 78px 37px rgba(0, 0, 0, 0.34);
+            -moz-box-shadow: -30px 11px 78px 37px rgba(0,0,0,0.34);
+            box-shadow: -30px 11px 78px 37px rgba(0,0,0,0.34);
+            font-size: 40px;
+            letter-spacing: 10px;
+            word-spacing: 20px;
+            text-transform:lowercase;
+        }
+
+        #box_father{
+            width: 200px;
+            height: 200px;
+            background-color: #0000ff;
+            background-image: url(https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt32d72f755cd22355/64091acde70dd635488d0e37/header.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat:no-repeat;
+        }
+
+        /* #box_model{ */
+            /* width: 50%; */
+            /* height: 50%; */
+            /* background-color: orange; */
+            /* margin: 0 auto; */
+            /* text-align: center; */
+        /* } */
+
+        /* Media querys */
+        @media (min-width: 800px) and (max-width: 1200px){
+            body{
+                background-color: red;
+            }
+            h1{
+                text-align: center;
+            }
+        }
+        @media (max-width: 799px){
+            body{
+                background-image: url(https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt32d72f755cd22355/64091acde70dd635488d0e37/header.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
+            }
         }
