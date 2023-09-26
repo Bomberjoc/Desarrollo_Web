@@ -5,31 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>José</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <h3>Redirecciones:</h3>
-    <nav>
-        <ul>
-            <li><a href="html/tablas.html">Tablas</a></li>
-            <br>
-            <li><a href="html/formularios.html">Formularios</a></li>
-            <br>
-            <li><a href="html/multimedia.html">Galería Multimedia</a></li>
-            <br>
-           <li><a href="html/agrupacion.html">Agrupacion</a></li>
-           <br>
-           <li><a href="html/semantica.html">Semantica</a></li> 
-           <br>
-           <li><a href="html/texto.html">Texto</a></li>
-           <br>
-           <li><a href="html/estilos.html">Estilos</a></li>
-           <br>
-           <li><a href="html/flexbox.html">flexbox</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <br>
-    <p><h3>Temazo</h3></p>
-    <br>
+    <div class="background"></div>
+    <div class="centering">
+        <form action="" class="my_form">
+            <div class="login_welcome">
+                <!-- img.login+h1{Iniciar Sesion} -->
+                <img src="https://esports.as.com/2020/05/13/league-of-legends/nuevos-aspectos-Astronauta-League-Legends_1354674547_393061_1024x604.jpg" alt="Astronauta" class="login">
+                <h1>Iniciar Sesion</h1>
+            </div>
+            <div class="text_field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email" aria-label="email" required>
+                <!-- Required para hacerlo obligatorio -->
+                <img src="img/email-svgrepo-com.svg" alt="email">
+            </div>
+            <div class="text_field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Ingrese su Password" aria-label="password" required>
+                <!-- Required para hacerlo obligatorio -->
+                <img src="https://cdn-icons-png.flaticon.com/512/345/345535.png" alt="Password">
+            </div>
+            <input type="submit" value="login" class="my_form_button">
+            <!-- .my_form_actions>div>span+a -->
+            <div class="my_form_actions">
+                <div>
+                    <span>¿Olvidaste tu contraseña?</span>
+                    <a href="#" title="Recuperar contraseña">Recuperar contraseña</a>
+                </div>
+                <div class="my_form_signup">
+                    <a href="#" title="Crear cuenta">Crear cuenta</a>
+                    <!-- Tittle muestra un mensaje al pasar el mouse sobre -->
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
